@@ -18,6 +18,7 @@ Example (Other Event by ID):
 
 function spritePattern(t,p){
 	var ev, pose, dir;
+	/* Object, this or number id */
 	if(typeof(t) == "number"){
 		ev=t;
 	}
@@ -25,32 +26,25 @@ function spritePattern(t,p){
 		ev=t._eventId;
 	}
 	
+	/* Determines the pose */
 	if(p==1 || p==2 || p==3){
 		dir=2;
-		if(p==1){pose=0;}
-		if(p==2){pose=1;}
-		if(p==3){pose=2;}
+		pose=p-1;
 	}
 	
 	if(p==4 || p==5 || p==6){
 		dir=4;
-		if(p==4){pose=0;}
-		if(p==5){pose=1;}
-		if(p==6){pose=2;}
+		pose=p-40;
 	}
 	
 	if(p==7 || p==8 || p==9){
 		dir=6;
-		if(p==7){pose=0;}
-		if(p==8){pose=1;}
-		if(p==9){pose=2;}
+		pose=p-7;
 	}
 	
 	if(p==10 || p==11 || p==12){
 		dir=8;
-		if(p==10){pose=0;}
-		if(p==11){pose=1;}
-		if(p==12){pose=2;}
+		pose=p-10;
 	}
 	
 	$gameMap._events[ev]._pattern=pose;
