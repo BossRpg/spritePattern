@@ -14,6 +14,8 @@ Example (Event current):
 
 Example (Other Event by ID):
    spritePattern(2, 1)
+   
+Compatibility: RMMV and RMMZ
 */
 
 function spritePattern(t,p){
