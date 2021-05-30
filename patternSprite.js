@@ -33,7 +33,7 @@ function spritePattern(t,p){
 	}	
 	if(p==4 || p==5 || p==6){
 		dir=4;
-		pose=p-40;
+		pose=p-4;
 	}	
 	if(p==7 || p==8 || p==9){
 		dir=6;
