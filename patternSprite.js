@@ -7,7 +7,7 @@ spritePattern(Event ID, Pose)
 
 Event ID: this or number
 
-Pose:  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+Pose: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
 
 Example (Event current):
    spritePattern(this, 1)
