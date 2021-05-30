@@ -30,23 +30,21 @@ function spritePattern(t,p){
 	if(p==1 || p==2 || p==3){
 		dir=2;
 		pose=p-1;
-	}
-	
+	}	
 	if(p==4 || p==5 || p==6){
 		dir=4;
 		pose=p-40;
-	}
-	
+	}	
 	if(p==7 || p==8 || p==9){
 		dir=6;
 		pose=p-7;
-	}
-	
+	}	
 	if(p==10 || p==11 || p==12){
 		dir=8;
 		pose=p-10;
 	}
 	
+	/* Affects the defined map event */
 	$gameMap._events[ev]._pattern=pose;
 	$gameMap._events[ev]._originalPattern=pose;
 	$gameMap._events[ev]._direction=dir;
